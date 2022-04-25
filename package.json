@@ -1,0 +1,21 @@
+{
+  "name": "web-audio-test",
+  "version": "0.0.0",
+  "description": "coming soon...",
+  "main": "wat.js",
+  "scripts": {},
+  "keywords": [
+    "testing",
+    "test"
+  ],
+  "author": "jazz-soft (https://jazz-soft.net/)",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jazz-soft/web-audio-test.git"
+  },
+  "homepage": "https://jazz-soft.net",
+  "bugs": "https://github.com/jazz-soft/web-audio-test/issues",
+  "license": "MIT"
+}
