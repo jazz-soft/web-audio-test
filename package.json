@@ -3,14 +3,22 @@
   "version": "0.0.0",
   "description": "coming soon...",
   "main": "wat.js",
-  "scripts": {},
+  "scripts": {
+    "test": "nyc mocha test/mocha.js",
+    "lint": "eslint wat.js test",
+    "coverage": "nyc report --reporter=lcov"
+  },
   "keywords": [
     "testing",
     "test"
   ],
   "author": "jazz-soft (https://jazz-soft.net/)",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "jzz": "^1.5.1",
+    "eslint": "^8.14.0",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jazz-soft/web-audio-test.git"
