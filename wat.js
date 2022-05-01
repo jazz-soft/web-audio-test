@@ -27,11 +27,17 @@
   }
 
   function AudioParam() {
+    this.cancelScheduledValues = function() {};
+    this.exponentialRampToValueAtTime = function() {};
+    this.linearRampToValueAtTime = function() {};
     this.setTargetAtTime = function() {};
+    this.setValueAtTime = function() {};
+    this.setValueCurveAtTime = function() {};
   }
 
   function OscillatorNode() {
     var self = new AudioNode();
+    self.frequency = new AudioParam();
     self.start = function() {};
     self.stop = function() {};
     return self;
