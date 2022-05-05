@@ -35,6 +35,10 @@
     this.setValueCurveAtTime = function() {};
   }
 
+  function AudioBuffer() {
+    this.getChannelData = function() {};
+  }
+
   function OscillatorNode() {
     var self = new AudioNode();
     self.frequency = new AudioParam();
@@ -49,10 +53,30 @@
     return self;
   }
 
+  function DynamicsCompressorNode() {
+    var self = new AudioNode();
+    self.gain = new AudioParam();
+    return self;
+  }
+
+  function ConvolverNode() {
+    var self = new AudioNode();
+    return self;
+  }
+
+  function PeriodicWaveNode() {
+    var self = new AudioNode();
+    return self;
+  }
+
   function AudioContext() {
     this.resume = function() {};
     this.createOscillator = function() { return new OscillatorNode(); };
     this.createGain = function() { return new GainNode(); };
+    this.createDynamicsCompressor = function() { return new DynamicsCompressorNode(); };
+    this.createConvolver = function() { return new ConvolverNode(); };
+    this.createPeriodicWave = function() { return new PeriodicWaveNode(); };
+    this.createBuffer = function() { return new AudioBuffer(); };
   }
 
   var WAT = {

@@ -1,6 +1,6 @@
 {
   "name": "web-audio-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "coming soon...",
   "main": "wat.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "devDependencies": {
     "jzz": "^1.5.1",
     "eslint": "^8.14.0",
-    "mocha": "^9.2.2",
+    "mocha": "^10.0.0",
     "nyc": "^15.1.0"
   },
   "repository": {
