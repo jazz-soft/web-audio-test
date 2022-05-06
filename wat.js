@@ -1,4 +1,5 @@
 (function(global, factory) {
+  /* istanbul ignore next */
   if (typeof exports === 'object' && typeof module !== 'undefined') {
     module.exports = factory();
   }
@@ -17,8 +18,10 @@
 
   function _noop() {}
 
+  /* istanbul ignore next */
   var _time = Date.now || function () { return new Date().getTime(); };
   var _startTime = _time();
+  /* istanbul ignore next */
   var _now = typeof performance != 'undefined' && performance.now ?
     function() { return performance.now(); } : function() { return _time() - _startTime; };
 
