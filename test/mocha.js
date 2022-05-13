@@ -29,6 +29,10 @@ describe('web-audio', function() {
     var ac = new window.AudioContext();
     ac.createPeriodicWave();
   });
+  it('AudioBufferSource', function() {
+    var ac = new window.AudioContext();
+    ac.createBufferSource();
+  });
 });
 
 describe('jzz', function() {

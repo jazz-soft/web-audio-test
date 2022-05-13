@@ -67,6 +67,14 @@
     return self;
   }
 
+  function AudioBufferSourceNode() {
+    var self = new AudioNode();
+    self.playbackRate = new AudioParam();
+    self.start = function() {};
+    self.stop = function() {};
+    return self;
+  }
+
   function PeriodicWaveNode() {
     var self = new AudioNode();
     return self;
@@ -80,6 +88,7 @@
     this.createConvolver = function() { return new ConvolverNode(); };
     this.createPeriodicWave = function() { return new PeriodicWaveNode(); };
     this.createBuffer = function() { return new AudioBuffer(); };
+    this.createBufferSource = function() { return new AudioBufferSourceNode(); };
   }
 
   var WAT = {
