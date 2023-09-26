@@ -1,6 +1,6 @@
 {
   "name": "web-audio-test",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "coming soon...",
   "main": "wat.js",
   "scripts": {
@@ -14,8 +14,8 @@
   ],
   "author": "jazz-soft (https://jazz-soft.net/)",
   "devDependencies": {
-    "jzz": "^1.5.6",
-    "eslint": "^8.30.0",
+    "jzz": "^1.7.0",
+    "eslint": "^8.50.0",
     "mocha": "^10.2.0",
     "nyc": "^15.1.0"
   },
