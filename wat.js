@@ -82,6 +82,7 @@
 
   function AudioContext() {
     this.resume = function() {};
+    this.close = function() {};
     this.createOscillator = function() { return new OscillatorNode(); };
     this.createGain = function() { return new GainNode(); };
     this.createDynamicsCompressor = function() { return new DynamicsCompressorNode(); };
